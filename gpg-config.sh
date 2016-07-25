@@ -11,7 +11,7 @@
 # 
 # :author: greyspectrum
 # :date: 24 July 2016
-# :version: 0.0.6
+# :version: 0.9.0
 ##############################################################################
 
 # Define variables and such
