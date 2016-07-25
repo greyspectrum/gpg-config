@@ -5,4 +5,4 @@ You pick RSA or ECC and we take care of (most of) the rest.
 
 Very good script. Not virus.
 
-*Not done yet. Don't use me (yet).
+*Not done yet. Don't use me.
