@@ -39,10 +39,10 @@ else
 								    ; break ;;
 					[Nn]* ) apt-get install gpg 
 						gpg --gen-key
-						echo "1" 
-						echo "4096" 
- 						echo "1y" 
-						echo "y" 
+						echo "1" ^M
+						echo "4096" ^M 
+ 						echo "1y" ^M
+						echo "y" ^M
 						read -p #pick up where you left off
 								    ; break ;;
 					* )	echo "Please answer y (yes) or n (no)." ;;
