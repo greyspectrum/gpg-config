@@ -1,2 +1,6 @@
 # gpg-config
-Configures gpg and creates keys for you, the easy way.
+Creates gpg keys for you, the easy way.
+
+You pick RSA or ECC and we take care of (most of) the rest.
+
+Very good script. Not virus.
