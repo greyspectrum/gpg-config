@@ -34,11 +34,21 @@ else
 		case $yn in
 			[Yy]* ) read -p "Do you want ECC keys (recommended)?" yn
 				case $yn in
-					[Yy]* ) apt-get install gpg2; break ;;
-					[Nn]* ) apt-get install gpg;  break ;;
+					[Yy]* ) apt-get install gpg2
+						
+								    ; break ;;
+					[Nn]* ) apt-get install gpg 
+						gpg --gen-key
+						echo "1" 
+						echo "4096" 
+ 
+						echo "1y" 
+						echo "y" 
+						read -p #pick up where you left off
+								    ; break ;;
 					* )	echo "Please answer y (yes) or n (no)." ;;
 				esac	
-			[Nn]* ) echo "Fine. Whatever. I don't need you." && exit ;;
+			[Nn]* ) echo "WTF. Why are you running this script, then?" && exit ;;
 			* ) 	echo "Please answer y (yes) or n (no)." ;;
 		esac
 	done
