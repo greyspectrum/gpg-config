@@ -41,8 +41,7 @@ else
 						gpg --gen-key
 						echo "1" 
 						echo "4096" 
- 
-						echo "1y" 
+ 						echo "1y" 
 						echo "y" 
 						read -p #pick up where you left off
 								    ; break ;;
