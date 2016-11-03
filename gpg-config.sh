@@ -3,18 +3,14 @@
 ##############################################################################
 # gpg-config
 # -----------
-# Creates gpg keys for you, the easy way.
-#
-# You pick RSA or ECC and we take care of (most of) the rest.
-#
-# Very good script. Not virus.
-# 
+# Creates gpg keys for you with sane defaults.
+#  
 # :author: greyspectrum
-# :date: 24 July 2016
-# :version: 0.9.0
+# :date: 3 November 2016
+# :version: 0.1.0
 ##############################################################################
 
-# Define variables and such
+# Define variables 
 
 GPG_CONF="/.gnupg/gpg.conf"
 
@@ -24,7 +20,7 @@ BACKUP_GPG_CONF="/.gnupg/gpgconf.bak"
 
 [ "$(whoami)" != "root" ] && exec sudo -- "$0" "$@"
 
-# Is this thing even on?
+# Test if GPG is installed.
 
 if test -e $GPG_CONF ; then
 	gpg --version
